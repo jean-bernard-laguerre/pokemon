@@ -21,6 +21,7 @@ class Combat:
             degats = (10 + (auteur.getAttaque() - cible.getDefense())) * (TABLE[id_types[cible.type[0]]][id_types[auteur.type[0]]] * TABLE[id_types[cible.type[1]]][id_types[auteur.type[1]]])
             cible.setPv(cible.getPv() - (int(degats)))
             return True
+        print("Raté...")
         return False
     
     def perdant(self):

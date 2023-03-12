@@ -1,6 +1,10 @@
 import json 
 import random
-from classes.pokemon import *
+from classes.types.eau import *
+from classes.types.feu import *
+from classes.types.terre import *
+from classes.types.normal import *
+from classes.types.plante import *
 
 def recup_pokemon(nom = ""):
 
@@ -32,4 +36,8 @@ def recup_pokedex():
     return pokedex
 
 def reset_pokedex():
-    pass
+    f = open("outils\pokedex.json", "r+")
+    f.truncate(0)
+    json.dump({}, f, indent=4)
+
+    f.close()

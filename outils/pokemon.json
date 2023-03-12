@@ -118,19 +118,6 @@
         "Attaque": 18,
         "Defense": 13
     },
-    "Volcanion": {
-        "Nom": "Volcanion",
-        "Type": [
-            "Feu",
-            "Eau"
-        ],
-        "Niveau": 10,
-        "Evolutions": [
-            "Volcanion"
-        ],
-        "Attaque": 15,
-        "Defense": 5
-    },
     "Herbizarre": {
         "Nom": "Herbizarre",
         "Type": [

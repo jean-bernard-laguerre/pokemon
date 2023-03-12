@@ -1,17 +1,17 @@
 {
-    "Tortank": {
-        "Nom": "Tortank",
+    "Dracaufeu": {
+        "Nom": "Dracaufeu",
         "Type": [
-            "Eau",
+            "Feu",
             "Nul"
         ],
         "Niveau": 10,
         "Evolutions": [
-            "Tortank",
-            "Carabaffe",
-            "Tortank"
+            "Dracaufeu",
+            "Reptincel",
+            "Dracaufeu"
         ],
-        "Attaque": 10,
+        "Attaque": 15,
         "Defense": 5
     },
     "Salameche": {
@@ -23,21 +23,6 @@
         "Niveau": 10,
         "Evolutions": [
             "Salameche",
-            "Reptincel",
-            "Dracaufeu"
-        ],
-        "Attaque": 15,
-        "Defense": 5
-    },
-    "Reptincel": {
-        "Nom": "Reptincel",
-        "Type": [
-            "Feu",
-            "Nul"
-        ],
-        "Niveau": 10,
-        "Evolutions": [
-            "Reptincel",
             "Reptincel",
             "Dracaufeu"
         ],
@@ -59,21 +44,6 @@
         "Attaque": 10,
         "Defense": 5
     },
-    "Carabaffe": {
-        "Nom": "Carabaffe",
-        "Type": [
-            "Eau",
-            "Nul"
-        ],
-        "Niveau": 10,
-        "Evolutions": [
-            "Carabaffe",
-            "Carabaffe",
-            "Tortank"
-        ],
-        "Attaque": 10,
-        "Defense": 5
-    },
     "Bulbizarre": {
         "Nom": "Bulbizarre",
         "Type": [
@@ -89,6 +59,80 @@
         "Attaque": 12,
         "Defense": 1
     },
+    "Evoli": {
+        "Nom": "Evoli",
+        "Type": [
+            "Normal",
+            "Nul"
+        ],
+        "Niveau": 10,
+        "Evolutions": [
+            "Evoli",
+            "Pyroli"
+        ],
+        "Attaque": 12,
+        "Defense": 2
+    },
+    "Tortank": {
+        "Nom": "Tortank",
+        "Type": [
+            "Eau",
+            "Nul"
+        ],
+        "Niveau": 10,
+        "Evolutions": [
+            "Tortank",
+            "Carabaffe",
+            "Tortank"
+        ],
+        "Attaque": 10,
+        "Defense": 5
+    },
+    "Carabaffe": {
+        "Nom": "Carabaffe",
+        "Type": [
+            "Eau",
+            "Nul"
+        ],
+        "Niveau": 10,
+        "Evolutions": [
+            "Carapuce",
+            "Carabaffe",
+            "Tortank"
+        ],
+        "Attaque": 14,
+        "Defense": 9
+    },
+    "Reptincel": {
+        "Nom": "Reptincel",
+        "Type": [
+            "Feu",
+            "Nul"
+        ],
+        "Niveau": 10,
+        "Evolutions": [
+            "Reptincel",
+            "Reptincel",
+            "Dracaufeu"
+        ],
+        "Attaque": 15,
+        "Defense": 5
+    },
+    "Herbizarre": {
+        "Nom": "Herbizarre",
+        "Type": [
+            "Plante",
+            "Poison"
+        ],
+        "Niveau": 10,
+        "Evolutions": [
+            "Bulbizarre",
+            "Herbizarre",
+            "Florizarre"
+        ],
+        "Attaque": 16,
+        "Defense": 5
+    },
     "Florizarre": {
         "Nom": "Florizarre",
         "Type": [
@@ -103,32 +147,5 @@
         ],
         "Attaque": 20,
         "Defense": 9
-    },
-    "Volcanion": {
-        "Nom": "Volcanion",
-        "Type": [
-            "Feu",
-            "Eau"
-        ],
-        "Niveau": 10,
-        "Evolutions": [
-            "Volcanion"
-        ],
-        "Attaque": 15,
-        "Defense": 5
-    },
-    "Evoli": {
-        "Nom": "Evoli",
-        "Type": [
-            "Normal",
-            "Nul"
-        ],
-        "Niveau": 10,
-        "Evolutions": [
-            "Evoli",
-            "Pyroli"
-        ],
-        "Attaque": 12,
-        "Defense": 2
     }
 }
