@@ -65,18 +65,21 @@ def afficher_combat():
         image_pk_face = pygame.image.load(f"images\Salameche_face.png")
         image_pk_dos = pygame.image.load(f"images\Salameche_dos.png")
 
+    image_pk_dos = pygame.transform.scale(image_pk_dos, (128, 128))
+    image_pk_face = pygame.transform.scale(image_pk_face, (128, 128))
+
     fenetre.blit(combat_bg, combat_bg_rect)
 
-    fenetre.blit(image_pk_dos, (200, 380), image_pk_dos.get_rect())
-    fenetre.blit(image_pk_face, (500, 250), image_pk_face.get_rect())
+    fenetre.blit(image_pk_dos, (200, 340), image_pk_dos.get_rect())
+    fenetre.blit(image_pk_face, (480, 220), image_pk_face.get_rect())
 
-    fenetre.blit(nom_joueur, (170, 450))
+    fenetre.blit(nom_joueur, (170, 460))
     fenetre.blit(nom_adversaire, (620, 100))
 
-    fenetre.blit(nv_joueur, (100, 450))
+    fenetre.blit(nv_joueur, (100, 460))
     fenetre.blit(nv_adversaire, (550, 100))
     
-    barre(combat.joueur.getPv(), combat.joueur.getPvMax(), 100, 480)
+    barre(combat.joueur.getPv(), combat.joueur.getPvMax(), 100, 490)
     barre(combat.adversaire.getPv(), combat.adversaire.getPvMax(), 550, 130)
 
     if Bouton("Attaque", 150, 510, police_pokemon, "white").affichage(fenetre) and not clique:
