@@ -9,15 +9,18 @@ class Combat:
         self.joueur = joueur
         self.adversaire = recup_pokemon()
 
-
+    #Retourne False si un pokemon est KO
     def statut(self, pokemon):
         if pokemon.getPv() == 0:
             return False
         return True
     
+    #Attaque un pokemon 
     def attaquer(self, auteur, cible):
+        #Si coup est egal a 1 le coup reussi
         coup = random.choice([0,1])
         if coup == 1:
+            #Les degats sont multiplié par les resistances de la cible au type de l'auteur de l'attaque
             degats = (10 + (auteur.getAttaque() - cible.getDefense())) * (TABLE[id_types[cible.type[0]]][id_types[auteur.type[0]]] * TABLE[id_types[cible.type[1]]][id_types[auteur.type[1]]])
             cible.setPv(cible.getPv() - (int(degats)))
             return True
@@ -47,8 +50,10 @@ class Combat:
 
         f.close()
 
+    #Tour du combat
     def tour(self):
 
+        #Les pokemons s'attaquent chacun leur tours
         for i in range(2):
             
             if i == 0:
@@ -60,8 +65,3 @@ class Combat:
                 self.enregistrer(self.adversaire)
                 self.enregistrer(self.joueur)
                 return True
-
-
-
-        
-            

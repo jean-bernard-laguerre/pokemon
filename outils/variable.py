@@ -10,6 +10,7 @@ id_types = {"Nul" : 0,
             "Plante": 5,
             "Poison": 6}
 
+#Tableau de resistance
 TABLE = [   [1, 1, 1, 1, 1, 1, 1],
             [1, 1, .5, .5, 1, 2, 1],
             [1, 2, 1, 2, 1, .5, 1],

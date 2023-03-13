@@ -21,12 +21,13 @@ tdr = pygame.time.Clock()
 
 police_pokemon = pygame.font.Font("polices\PKMN RBYGSC.ttf", 16)
 
+#Images de fond
 menu_bg = pygame.image.load("images\menu_bg.jpg")
-
 combat_bg = pygame.image.load("images\d9spuwer2c491.png")
 combat_bg_rect = combat_bg.get_rect()
 
 
+#Menu principal
 def menu():
     global combat
 
@@ -51,7 +52,7 @@ def menu():
 
 def afficher_combat():
     global clique
-
+    
     nom_joueur = police_pokemon.render(f"{combat.joueur.getNom()}", 1, "white")
     nom_adversaire = police_pokemon.render(f"{combat.adversaire.getNom()}", 1, "white")
 
@@ -101,6 +102,8 @@ def affiche_pokedex():
     if len(list(pokedex)) > 0:
 
         pokemon = pokedex[list(pokedex)[index]]
+
+        #Affiche les infos du pokemon
         pk_image = pygame.image.load(f"images\{pokemon['Nom']}_face.png")
         nom_pokedex = police_pokemon.render(f"Nom: {pokemon['Nom']}", 1, "white")
         type_pokedex = police_pokemon.render(f"Type: {pokemon['Type'][0]}", 1, "white")
@@ -115,6 +118,7 @@ def affiche_pokedex():
         fenetre.blit(att_pokedex, (325, 310))
         fenetre.blit(def_pokedex, (325, 350))
 
+        #Navigation du pokedex
         if index < len(list(pokedex))-1:
             if Bouton("Suivant", 700, 300, police_pokemon, "white").affichage(fenetre) and not clique:
                 clique = True
